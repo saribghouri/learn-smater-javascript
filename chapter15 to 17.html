@@ -35,15 +35,41 @@
 //         conosle.log(obj.name);
 
 
-var cars = ["Saab", "Volvo", "BMW"];
+// var cars = ["Saab", "Volvo", "BMW"];
 
 
-var num = [3, 4, 5];
+// var num = [3, 4, 5];
 
 
 
-var  m = [ "zong" , "warid" , " uphone", "...." ] ;
+// var  m = [ "zong" , "warid" , " uphone", "...." ] ;
+// document.write(" qualifications:");
+// document.write("BR");
+// var E = ["SSC","HSC","BCS", "BS","BCOM", "MS","M.phil","PHD"];
+// for(var i = 0; i < E.length; i++){
+//     document.write(E + "\n")
 
-    </script>
+// }
+
+   var movie1 = "avengers: age of ultron"
+   var movie2 = "spectre"
+   var movie3 = "jurassic world"
+   var movie4 = "inside out"
+   var moviesArray =[]
+   moviesArray.push(movie1)
+   moviesArray.push(movie2)
+   moviesArray.push(movie3)
+   moviesArray.push(movie4)
+   document.write("top movies in 2015")
+   console.log("")
+   moviesArray.map((movie, index) => {
+       document.write(`${index + 1}:`, movie)
+   })
+   document.write("<br>")
+   document.write("lenth of array:", moviesArray.length)
+
+
+   
+</script>
 </body>
 </html>
