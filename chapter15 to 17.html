@@ -51,25 +51,47 @@
 
 // }
 
-   var movie1 = "avengers: age of ultron"
-   var movie2 = "spectre"
-   var movie3 = "jurassic world"
-   var movie4 = "inside out"
-   var moviesArray =[]
-   moviesArray.push(movie1)
-   moviesArray.push(movie2)
-   moviesArray.push(movie3)
-   moviesArray.push(movie4)
-   document.write("top movies in 2015")
-   console.log("")
-   moviesArray.map((movie, index) => {
-       document.write(`${index + 1}:`, movie)
-   })
-   document.write("<br>")
-   document.write("lenth of array:", moviesArray.length)
+//    var movie1 = "avengers: age of ultron"
+//    var movie2 = "spectre"
+//    var movie3 = "jurassic world"
+//    var movie4 = "inside out"
+//    var moviesArray =[]
+//    moviesArray.push(movie1)
+//    moviesArray.push(movie2)
+//    moviesArray.push(movie3)
+//    moviesArray.push(movie4)
+//    document.write("top movies in 2015")
+//    console.log("")
+//    moviesArray.map((movie, index) => {
+//        document.write(`${index + 1}:`, movie)
+//    })
+//    document.write("<br>")
+//    document.write("lenth of array:", moviesArray.length)
+
+//    var car =["audi","volvo","ford","lamborghini"];
+//  document.write("first index of the array:" ,0)
+//     document.write("car at first index of the Array:ITEM:",car[0])
+//     document.write("last index of the Array:",car.length - 1)
+//     document.write("car at Last index of the array ITEM:",car  [car.length -1])
+
+const total  = 500;
+var s1 =prompt()
+var s2 =prompt()
+var s3 =prompt()
+
+var p1 =prompt()
+var p2 =prompt()
+var p3 =prompt()
+
+var sa =[s1,s2,s3]
+var pa = [p1,p2,p3];
+
+const percentageArr = numbersArr.map((p) => ((p / total) * 100))
 
 
-   
+percentageArr.map((s, index) => (
+console.log(`${studentsArr[index]} scored ${numbersArr[index]} : ${percentageArr[index]}%`)
+))
 </script>
 </body>
 </html>
