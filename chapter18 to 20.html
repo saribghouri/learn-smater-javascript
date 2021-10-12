@@ -5,9 +5,43 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="table.css">
 </head>
 <body>
+  
+      <table>
+     <thead>
+         <tr>
+             <th>student</th>
+             <th>score</th>
+         </tr>
+     </thead>
+     <tbody data-list-display-container></tbody>
+      </table>
+  
     <script>
+var sortDirection =false;
+var personData = [
+    {name: "ali",score: 58},
+    {name: "sami",score:73},
+    {name: "taha",score:89},
+    {name: "inam",score:90}
+
+    ];
+
+    window.onload = () =>{
+        loadTableData(personData);
+    };
+function loadTableData(personData){
+    var tableBody =  document.querySelector('[data-list-display-container]');
+    var dataHtml = '';
+    for (let person of personData){
+        dataHtml += `<tr><td>${person.name}</td><td>${person.score}</td></tr>`;
+    }
+    console.log(dataHtml)
+
+    tableBody.innerHTML = dataHtml;
+}
 
 // var a = "hello world";
 // for(var i=0; i < 5; i++){
@@ -139,15 +173,15 @@
 // }
 // console.log(largest);
 
-var arr = [24,53,78,91,12];
-var smallest = arr[0];
+// var arr = [24,53,78,91,12,25, 10];
+// var smallest = arr[0];
 
-for (var i = 0; i < arr.length; i++) {
-    if (smallest > arr[i] ) {
-        smallest= arr[i];
-    }
-}
-console.log(smallest);
+// for (var i = 0; i < arr.length; i++) {
+//     if (smallest > arr[i] ) {
+//         smallest= arr[i];
+//     }
+// }
+// console.log(smallest);
     </script>
 
 </body>
