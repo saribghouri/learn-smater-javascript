@@ -9,7 +9,7 @@
 </head>
 <body>
   
-      <table>
+      <!-- <table>
      <thead>
          <tr>
              <th>student</th>
@@ -18,30 +18,30 @@
      </thead>
      <tbody data-list-display-container></tbody>
       </table>
-  
+   -->
     <script>
-var sortDirection =false;
-var personData = [
-    {name: "ali",score: 58},
-    {name: "sami",score:73},
-    {name: "taha",score:89},
-    {name: "inam",score:90}
+// var sortDirection =false;
+// var personData = [
+//     {name: "ali",score: 58},
+//     {name: "sami",score:73},
+//     {name: "taha",score:89},
+//     {name: "inam",score:90}
 
-    ];
+//     ];
 
-    window.onload = () =>{
-        loadTableData(personData);
-    };
-function loadTableData(personData){
-    var tableBody =  document.querySelector('[data-list-display-container]');
-    var dataHtml = '';
-    for (let person of personData){
-        dataHtml += `<tr><td>${person.name}</td><td>${person.score}</td></tr>`;
-    }
-    console.log(dataHtml)
+//     window.onload = () =>{
+//         loadTableData(personData);
+//     };
+// function loadTableData(personData){
+//     var tableBody =  document.querySelector('[data-list-display-container]');
+//     var dataHtml = '';
+//     for (let person of personData){
+//         dataHtml += `<tr><td>${person.name}</td><td>${person.score}</td></tr>`;
+//     }
+//     console.log(dataHtml)
 
-    tableBody.innerHTML = dataHtml;
-}
+//     tableBody.innerHTML = dataHtml;
+// }
 
 // var a = "hello world";
 // for(var i=0; i < 5; i++){
@@ -182,6 +182,41 @@ function loadTableData(personData){
 //     }
 // }
 // console.log(smallest);
+// var a = prompt()
+
+//     for (var a; a >= 0; a -= 0.5){
+//     document.write(a-"");
+//  document.write("<br>")
+// }
+
+// const x = prompt()
+// for (var a=0; a<=x; a++) {
+
+//     if (a === 0) {
+//                 document.write(a +  " is even"+"<br>");
+//         }
+//         else if (a % 2 === 0) {
+//                 document.write(a + " is even"+"<br>");   
+//         }
+//         else {
+//                 document.write(a + " is odd"+"<br>");
+//         }
+// }
+
+
+var arr =[];
+var realTotal = 0;
+    document.write(arr);
+    // const reducer = (a,b) => a * b;
+for(var a = 1; a <= 7; a++){
+    if(a % 2 != 0){
+        document.write(a + "<br>")
+        arr.push(a)
+    }
+}
+realTotal= arr.reduce((total,num) => total * num);
+ document.write(realTotal);
+ document.write("<br>")
     </script>
 
 </body>
