@@ -204,20 +204,43 @@
 // }
 
 
-var arr =[];
-var realTotal = 0;
-    document.write(arr);
-    // const reducer = (a,b) => a * b;
-for(var a = 1; a <= 7; a++){
-    if(a % 2 != 0){
-        document.write(a + "<br>")
-        arr.push(a)
-    }
+// var arr =[];
+// var realTotal = 0;
+//     document.write(arr);
+//     // const reducer = (a,b) => a * b;
+// for(var a = 1; a <= 7; a++){
+//     if(a % 2 != 0){
+//         document.write(a + "<br>")
+//         arr.push(a)
+//     }
+// }
+// realTotal= arr.reduce((total,num) => total * num);
+//  document.write(realTotal);
+//  document.write("<br>")
+
+
+ var a = 5;
+var sarib = "";
+for (var i = 0; i < a; i++) {
+  for (var s = 0; s < a - i; s++) {
+    sarib += "+";
+  }
+
+  sarib += "\n";
 }
-realTotal= arr.reduce((total,num) => total * num);
- document.write(realTotal);
- document.write("<br>")
+console.log(sarib);
+
+
+
+
     </script>
 
 </body>
 </html>
+
+
+
+
+
+
+
