@@ -293,15 +293,25 @@
 //         }
 
 
-        var num1 = prompt()
-        var num2 = prompt()
-        if( num1 < num2 ){
-          alert( num1+ "greater then" + num2 )
-        }else if( num2 > num1 ){
-          alert(num1+ "less then " + num2 );
-        }else{
-          alert( " wrong")
-        }
+        // var num1 = prompt()
+        // var num2 = prompt()
+        // if( num1 < num2 ){
+        //   alert( num1+ "greater then" + num2 )
+        // }else if( num2 > num1 ){
+        //   alert(num1+ "less then " + num2 );
+        // }else{
+        //   alert( " wrong")
+        // }
+
+
+
+
+        var date1 = new Date("11/1/2021");
+        var date2 = new Date("15/4/2021");
+
+        var ramdan = date2.getTime() - date1.getTime();
+
+        console.log(ramdan)
       </script>
   </body>
 </html>
