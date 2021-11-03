@@ -238,16 +238,49 @@
         //  document.write(total,"socred by sarib out of 40")
 
 
-         var penprice = 0;
-         var bookprice = 1;
+        //  var penprice = 0;
+        //  var bookprice = 1;
 
-         var quaintity = [{pen: 3 ,book: 3},{pen: 5,book: 4}];
-         var l = quaintity.reduce((previousValue, currentValue, Index  )=>{
+        //  var quaintity = [{pen: 3 ,book: 3},{pen: 5,book: 4}];
+        //  var l = quaintity.reduce((previousValue, currentValue, Index  )=>{
         
-                return   previousValue + currentValue.pen * penprice + currentValue.book * bookprice  
+        //         return   previousValue + currentValue.pen * penprice + currentValue.book * bookprice  
 
-        },0)
-        console.log(l)
+        // },0)
+        // console.log(l)
+
+//  var a = Number(prompt());
+// var b = Number(prompt());
+// var c =prompt("operation")
+// if( c === "+" ){
+// var res = a + b
+//   alert(res)
+// }
+// else if( c === "-" ){
+// var res = a - b
+//   alert(res)
+// }
+
+// else if( c === "*" ){
+// var res = a * b
+//   alert(res)
+// }
+
+// else if( c === "/" ){
+//  var res = a / b
+//   alert(res)
+// }else{
+//   alert(" wrong")
+// }
+var input = Number(prompt("Enter the number "));
+        
+        switch (input % 3 ) {
+            case 0:
+                alert("Number is divisible by 3");
+                break;
+            default:
+                alert("Number is not divisible by 3");
+        }
                </script>
         
         </body>
